@@ -18,8 +18,8 @@ Google Sheets API (Recommended)
 * Full CRUD operations (Create, Read, Update, Delete)
 * Proper error handling and rate limiting
 
-  ## 📁 Project Structure
-  config/
+## 📁 Project Structure
+config/
 └── googleSheets.js      # Configuration & initialization for Google Sheets API
 controllers/
 └── attendanceController.js # Business logic (handles data processing)
