@@ -25,14 +25,14 @@ A practical experiment demonstrating how to use Google Sheets as a lightweight b
 ├── index.js                      # Main application entry point (Express server)
 ├── package.json                  # npm dependencies and project metadata
 ├── package-lock.json             # Exact dependency tree lockfile
-└── README.md                     # Project documentation (this file)```
-
-##🚀 Features
-*Full CRUD Operations on attendance records stored in Google Sheets
-*QR Code Integration Generate codes for events, students, or sessions
-*RESTful API Structured backend with clear separation of concerns
-Proper error handling and rate limiting
-*Scalable Architecture MVC-like pattern (Models, Controllers, Routes)
+└── README.md                     # Project documentation (this file)
+```
+## 🚀 Features
+- **Full CRUD Operations** on attendance records stored in Google Sheets
+- **QR Code Integration** Generate codes for events, students, or sessions
+- **RESTful API** Structured backend with clear separation of concerns
+- Proper error handling and rate limiting
+- **Scalable Architecture** MVC-like pattern (Models, Controllers, Routes)
 
 ## 🛠️ Tech Stack
 *Runtime: Node.js
