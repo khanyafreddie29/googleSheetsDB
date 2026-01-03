@@ -11,19 +11,21 @@ A practical experiment demonstrating how to use Google Sheets as a lightweight b
 * Small-scale projects where a full database is unnecessary
 
 ## 📁 Project Structure
-config/
-└── googleSheets.js      # Configuration & initialization for Google Sheets API
-controllers/
-└── attendanceController.js # Business logic (handles data processing)
-models/
-└── attendanceModel.js   # Data layer (direct Sheets interaction)
-routes/
-└── attendanceRoutes.js  # API endpoint definitions
-utils/
-└── generateQR.js        # QR code generation utility
-index.js                 # Main application entry point
-package.json             # Dependencies and scripts
-README.md                # This file
+```google-sheets-attendance/
+├── config/
+│   └── googleSheets.js           # Google Sheets API configuration and setup
+├── controllers/
+│   └── attendanceController.js   # Handles business logic for attendance operations
+├── models/
+│   └── attendanceModel.js        # Data layer for Google Sheets interactions
+├── routes/
+│   └── attendanceRoutes.js       # Express routes for attendance API endpoints
+├── utils/
+│   └── generateQR.js             # QR code generation utility functions
+├── index.js                      # Main application entry point (Express server)
+├── package.json                  # npm dependencies and project metadata
+├── package-lock.json             # Exact dependency tree lockfile
+└── README.md                     # Project documentation (this file)```
 
 ##🚀 Features
 *Full CRUD Operations on attendance records stored in Google Sheets
@@ -33,22 +35,22 @@ Proper error handling and rate limiting
 *Scalable Architecture MVC-like pattern (Models, Controllers, Routes)
 
 ## 🛠️ Tech Stack
-Runtime: Node.js
-Sheets Integration: google-spreadsheet library
-QR Generation: qr-image or similar packag
-Web Framework: Express.js
-Environment Management: dotenv (recommended)
+*Runtime: Node.js
+*Sheets Integration: google-spreadsheet library
+*QR Generation: qr-image or similar package
+*Web Framework: Express.js
+*Environment Management: dotenv (recommended)
 
 ## ⚙️ Prerequisites
-Node.js (v14 or higher)
-A Google Cloud Platform project
-Google Sheets API enabled
-Service Account credentials (JSON key file)
+*Node.js (v14 or higher)
+*A Google Cloud Platform project
+*Google Sheets API enabled
+*Service Account credentials (JSON key file)
 
 ## ⚠️ Important Notes
-Never commit your actual credentials.json or .env file
-Google Sheets API has usage limits (approx. 500 requests per 100 seconds)
-For production use with high traffic, implement caching and request queuing
-Consider adding data validation in the controller layer
+*Never commit your actual credentials.json or .env file
+*Google Sheets API has usage limits (approx. 500 requests per 100 seconds)
+*For production use with high traffic, implement caching and request queuing
+*Consider adding data validation in the controller layer(middleware)
 
 > **💡 Note:** This project is an educational implementation. While Google Sheets works well for prototypes and low-traffic applications, consider traditional databases (PostgreSQL, MongoDB) for production systems with complex queries or high-volume data.
