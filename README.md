@@ -35,22 +35,22 @@ A practical experiment demonstrating how to use Google Sheets as a lightweight b
 - **Scalable Architecture** MVC-like pattern (Models, Controllers, Routes)
 
 ## 🛠️ Tech Stack
-*Runtime: Node.js
-*Sheets Integration: google-spreadsheet library
-*QR Generation: qr-image or similar package
-*Web Framework: Express.js
-*Environment Management: dotenv (recommended)
+* Runtime: Node.js
+* Sheets Integration: google-spreadsheet library
+* QR Generation: qr-image or similar package
+* Web Framework: Express.js
+* Environment Management: dotenv (recommended)
 
 ## ⚙️ Prerequisites
-*Node.js (v14 or higher)
-*A Google Cloud Platform project
-*Google Sheets API enabled
-*Service Account credentials (JSON key file)
+* Node.js (v14 or higher)
+*  A Google Cloud Platform project
+* Google Sheets API enabled
+* Service Account credentials (JSON key file)
 
 ## ⚠️ Important Notes
-*Never commit your actual credentials.json or .env file
-*Google Sheets API has usage limits (approx. 500 requests per 100 seconds)
-*For production use with high traffic, implement caching and request queuing
-*Consider adding data validation in the controller layer(middleware)
+* Never commit your actual credentials.json or .env file
+* Google Sheets API has usage limits (approx. 500 requests per 100 seconds)
+* For production use with high traffic, implement caching and request queuing
+* Consider adding data validation in the controller layer(middleware)
 
 > **💡 Note:** This project is an educational implementation. While Google Sheets works well for prototypes and low-traffic applications, consider traditional databases (PostgreSQL, MongoDB) for production systems with complex queries or high-volume data.
